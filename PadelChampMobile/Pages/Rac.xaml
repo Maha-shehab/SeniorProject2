@@ -1,0 +1,68 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PadelChampMobile.Rac">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Page Title -->
+            <Label Text="Rules and Conditions" FontSize="22" FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+
+            <!-- Rules Section -->
+            <Frame CornerRadius="12" Padding="10" BorderColor="#DDDDDD">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Rules :" FontSize="20" FontAttributes="Bold" />
+                    <BoxView HeightRequest="0.2" Color="Black" Margin="0,5,0,10"/>
+                    <Label Text="1. The Padel Court : The walls are part of the game." FontAttributes="Bold" />
+                    <Label Text="2. Players : Padel is typically played in doubles (two players per team)." FontAttributes="Bold" />
+                    <Label Text="3. Scoring : The scoring system follows tennis: 0, 15, 30, 40. If both teams reach 40 (deuce), a team must win two consecutive points to win the game. The first point won after deuce is called 'advantage'. If the team with advantage loses the next point, the score returns to deuce. A match is usually played in the best of three sets." FontAttributes="Bold" />
+                    <Label Text="4. Serve : The serve must be made underhand and must bounce in the service box on the opponent's side before being returned. Players must serve from behind the service line, and the ball must not touch the net." FontAttributes="Bold" />
+                    <Label Text="5. Rally : The ball can hit any wall after it has bounced on the ground. Players can use the walls to return the ball, but it must not bounce twice on their side." FontAttributes="Bold" />
+                    <Label Text="6. Faults : A fault occurs if the ball goes out of bounds or does not bounce in the correct area. Each player is allowed two serves; if both are faults, the opponent gains a point." FontAttributes="Bold" />
+                    <Label Text="7. Let Serve : If the serve hits the net but still lands in the correct service box, it is considered a let serve and is replayed." FontAttributes="Bold" />
+                    <Label Text="8. Equipment : Players must use a padel racket and a padel ball." FontAttributes="Bold" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Conditions Section -->
+            <Frame CornerRadius="12" Padding="10" BorderColor="#DDDDDD">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Conditions:" FontSize="18" FontAttributes="Bold" />
+                    <BoxView HeightRequest="0.2" Color="Black" Margin="0,5,0,10"/>
+                    <Label Text="1. Court Conditions: The court must be well-maintained, with no obstructions affecting play." FontAttributes="Bold" />
+                    
+                    <Label Text="2. Player Conduct: Players are expected to demonstrate good sportsmanship and respect for opponents and officials." FontAttributes="Bold" />
+                    <Label Text="3. Match Duration: Match durations may vary based on skill level and scoring pace." FontAttributes="Bold" />
+                    <Label Text="4. Weather Conditions: Outdoor matches may be affected by weather; players should agree on whether to continue under adverse conditions." FontAttributes="Bold" />
+                    <Label Text="5. Injury Protocol: If a player is injured, they must notify the referee or opposing team. A reasonable amount of time will be allowed for recovery according to agreed-upon protocols." FontAttributes="Bold" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Navigation Footer -->
+            <StackLayout>
+                <HorizontalStackLayout Spacing="40" HorizontalOptions="Center">
+                    <VerticalStackLayout>
+                        <ImageButton x:Name="stadiumButton" Source="stadium.png" WidthRequest="60" HeightRequest="40" Clicked="ImageButton_Clicked_1" VerticalOptions="StartAndExpand"/>
+                        <Label Text="Stadiums" FontSize="10" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+
+
+
+                    <VerticalStackLayout>
+                        <ImageButton x:Name="reservationButton" Source="reservation.png" WidthRequest="30"  HeightRequest="40" Clicked="ImageButton_Clicked_2" />
+                        <Label Text="Reservation" FontSize="10"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <ImageButton x:Name="racButton" Source="rac.png" WidthRequest="30" HeightRequest="40" Clicked="ImageButton_Clicked_3" />
+                        <Label Text="RAC" FontSize="10" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <ImageButton x:Name="gameButton" Source="game.png" WidthRequest="30"  HeightRequest="40" Clicked="ImageButton_Clicked_4" />
+                        <Label Text="Game" FontSize="10" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

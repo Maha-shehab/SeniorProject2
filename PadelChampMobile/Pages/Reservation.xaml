@@ -1,0 +1,39 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PadelChampMobile.Reservation"
+             Title="Reservation">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <VerticalStackLayout x:Name="ReservationsContainer" Padding="20"  Spacing="15">
+                <!-- Dynamically loaded content will be added here -->
+            </VerticalStackLayout>
+            
+
+            <!-- Navigation Footer -->
+            <StackLayout>
+                <HorizontalStackLayout Spacing="40" HorizontalOptions="Center">
+                    <VerticalStackLayout>
+                        <ImageButton x:Name="stadiumButton" Source="stadium.png" WidthRequest="60" HeightRequest="40" Clicked="ImageButton_Clicked_1" VerticalOptions="StartAndExpand"/>
+                        <Label Text="Stadiums" FontSize="10" VerticalTextAlignment="Center" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+
+
+
+                    <VerticalStackLayout>
+                        <ImageButton x:Name="reservationButton" Source="reservation.png" WidthRequest="30"  HeightRequest="40" Clicked="ImageButton_Clicked_2" />
+                        <Label Text="Reservation" FontSize="10"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <ImageButton x:Name="racButton" Source="rac.png" WidthRequest="30" HeightRequest="40" Clicked="ImageButton_Clicked_3" />
+                        <Label Text="RAC" FontSize="10" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <ImageButton x:Name="gameButton" Source="game.png" WidthRequest="30"  HeightRequest="40" Clicked="ImageButton_Clicked_4" />
+                        <Label Text="Game" FontSize="10" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

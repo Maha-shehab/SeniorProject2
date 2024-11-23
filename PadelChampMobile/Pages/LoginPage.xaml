@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PadelChampMobile.LoginPage"
+             Title="LoginPage"
+                      BackgroundColor="#F0F1F1">
+
+
+    <Grid RowDefinitions="1*,8*,1*">
+        <Frame 
+      BackgroundColor="#cfd0d8"  
+       Grid.Row="0" 
+       HorizontalOptions="EndAndExpand"
+       Padding="0" 
+       Margin="0,-80,-80,0"
+       HeightRequest="250"
+       WidthRequest="250" CornerRadius="125">
+
+        </Frame>
+
+        <Frame BackgroundColor="#2c3b53" 
+       Grid.Row="0" 
+       HorizontalOptions="EndAndExpand"
+       Padding="0" 
+       Margin="0,-120,-120,0"
+       HeightRequest="250"
+       WidthRequest="250" CornerRadius="125">
+
+        </Frame>
+
+        <Frame CornerRadius="0"
+        
+        Grid.Row="1" 
+        VerticalOptions="CenterAndExpand"
+        Margin="30,0,30,0">
+
+
+            <ScrollView >
+                <VerticalStackLayout Spacing="25">
+                    <Label Text="SIGN IN" FontSize="28" FontAttributes="Bold" />
+
+
+                    <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                        <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
+                            <Entry VerticalOptions="Center" x:Name="TxtEmail" Placeholder="Email" Grid.Column="1" />
+                        </Grid>
+                    </Frame>
+
+
+                    <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                        <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
+                            <Entry VerticalOptions="Center" x:Name="TxtPassword"  Placeholder="password" Grid.Column="1" />
+                        </Grid>
+                    </Frame>
+
+
+
+                    <Button CornerRadius="0" HeightRequest="60" Text="SIGN IN" x:Name="loginbtn" Clicked="login_Button_Clicked" FontSize="20" FontAttributes="Bold" />
+                    <!--Lest create borderless entry -->
+                    <Label FontAttributes="Bold" Text="Forgot Password?" TextColor="Gray" HorizontalTextAlignment="Center" />
+                   
+
+
+                </VerticalStackLayout>
+            </ScrollView>
+
+
+
+        </Frame>
+
+
+
+        <Frame BackgroundColor="#cfd0d8" Grid.Row="2" 
+       VerticalOptions="EndAndExpand"
+       HorizontalOptions="StartAndExpand"
+       Padding="0" 
+       Margin="0,0,0,-180"
+       HeightRequest="250"
+       WidthRequest="250" CornerRadius="125">
+
+
+        </Frame>
+
+        <Frame BackgroundColor="#2c3b53" 
+       VerticalOptions="EndAndExpand"
+       Grid.Row="2" 
+       HorizontalOptions="StartAndExpand"
+       Padding="0" 
+       Margin="0,0,0,-200"
+       HeightRequest="250"
+       WidthRequest="250" CornerRadius="125">
+
+        </Frame>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             
+             x:Class="PadelChampMobile.MainPage"
+             BackgroundColor="#2F3954">
+
+    <ImageButton Source="padellogo.jpg" Clicked="ImageButton_Clicked"  HeightRequest="1300"/>
+</ContentPage>
